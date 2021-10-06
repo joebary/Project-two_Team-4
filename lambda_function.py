@@ -14,15 +14,6 @@ def parse_float(n):
         return float("nan")
 
 
-def get_btcprice():
-    """
-    Retrieves the current price of bitcoin in dollars from the alternative.me Crypto API.
-    """
-    bitcoin_api_url = "https://api.alternative.me/v2/ticker/bitcoin/?convert=USD"
-    response = requests.get(bitcoin_api_url)
-    response_json = response.json()
-    price_dollars = parse_float(response_json["data"]["1"]["quotes"]["USD"]["price"])
-    return price_dollars
 
 
 def get_fg_index():
