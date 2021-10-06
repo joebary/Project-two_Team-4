@@ -36,6 +36,13 @@ def get_fg_index():
     return fg_index
 
 
+def get_watson():
+    watson_ = ""
+    response_w = requests.get(watson_)
+    response_json_w =  response_w.json
+    watson_index = parse_float(reponse_w["data"][0]["value"])
+    return watson_index
+
 def get_recommendation():
     """
     Returns a buying recommendation based on the current value of the Bitcoin Fear & Greed Index.
@@ -55,6 +62,39 @@ def get_recommendation():
     return recommendation
 
 
+def get_watson_recommendation():
+    waston_index=get_watson_index()
+    watson_score = ""
+    if watson_index >=0 and watson_index <= 40:
+        watson_score = "Sentiment is negative", watson_score
+    elif watson_index > 40 and watson_index < 60:
+        watson_score = "Sentiment is neutral", watson_score
+    else:
+        watson_score = "Sentiment is positive" watson_score
+        
+def get_vader_recommendation():
+    vader_index=get_watson_index()
+    vader_score = ""
+    if vader_index >=0 and vader_index <= 40:
+        vader_score = "Sentiment is negative", vader_score
+    elif vader_index > 40 and vader_index < 60:
+        vader_score = "Sentiment is neutral", vader_score
+    else:
+        vader_score = "Sentiment is positive", vader_score
+
+
+def get_blob_recommendation():
+    blob_index=get_watson_index()
+    blob_score = ""
+    if blob_index >=0 and blob_index <= 40:
+        blob_score = "Sentiment is negative", blob_score
+    elif blob_index > 40 and blob_index < 60:
+        blob_score = "Sentiment is neutral", blob_score
+    else:
+        blob_score = "Sentiment is positive", blob_score
+        
+        
+
 def build_validation_result(is_valid, violated_slot, message_content):
     """
     Defines an internal validation message structured as a python dictionary.
@@ -69,26 +109,7 @@ def build_validation_result(is_valid, violated_slot, message_content):
     }
 
 
-def validate_data(dollars, intent_request):
-    """
-    Validates the data provided by the user.
-    """
 
-    # Validate the amount, it should be > 0
-    if dollars is not None:
-        dollars = parse_float(
-            dollars
-        )  # Since parameters are strings it's important to cast values
-        if dollars <= 0:
-            return build_validation_result(
-                False,
-                "amount",
-                "The amount should be greater than zero, "
-                "please provide a correct amount in dollars.",
-            )
-
-    # A True results is returned if age or amount are valid
-    return build_validation_result(True, None, None)
 
 
 ### Dialog Actions Helper Functions ###
@@ -144,65 +165,6 @@ def close(session_attributes, fulfillment_state, message):
     return response
 
 
-### Intents Handlers ###
-def convert_dollars(intent_request):
-    """
-    Performs dialog management and fulfillment for converting from dollars to bitcoin.
-    """
-
-    # Gets slots' values
-    dollars = get_slots(intent_request)["amount"]
-
-    # Gets the invocation source, for Lex dialogs "DialogCodeHook" is expected.
-    source = intent_request["invocationSource"]
-
-    if source == "DialogCodeHook":
-        # This code performs basic validation on the supplied input slots.
-
-        # Gets all the slots
-        slots = get_slots(intent_request)
-
-        # Validates user's input using the validate_data function
-        validation_result = validate_data(dollars, intent_request)
-
-        # If the data provided by the user is not valid,
-        # the elicitSlot dialog action is used to re-prompt for the first violation detected.
-        if not validation_result["isValid"]:
-            slots[validation_result["violatedSlot"]] = None  # Cleans invalid slot
-
-            # Returns an elicitSlot dialog to request new data for the invalid slot
-            return elicit_slot(
-                intent_request["sessionAttributes"],
-                intent_request["currentIntent"]["name"],
-                slots,
-                validation_result["violatedSlot"],
-                validation_result["message"],
-            )
-
-        # Fetch current session attributes
-        output_session_attributes = intent_request["sessionAttributes"]
-
-        # Once all slots are valid, a delegate dialog is returned to Lex to choose the next course of action.
-        return delegate(output_session_attributes, get_slots(intent_request))
-
-    # Get the current price of bitcoin in dolars and make the conversion from dollars to bitcoin.
-    btc_value = parse_float(dollars) / get_btcprice()
-    btc_value = round(btc_value, 4)
-
-    # Return a message with conversion's result.
-    return close(
-        intent_request["sessionAttributes"],
-        "Fulfilled",
-        {
-            "contentType": "PlainText",
-            "content": """Thank you for your information;
-            you can get {} Bitcoins for your ${} dollars.
-            {}
-            """.format(
-                btc_value, dollars, get_recommendation()
-            ),
-        },
-    )
 
 
 ### Intents Dispatcher ###
