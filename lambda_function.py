@@ -30,9 +30,23 @@ def get_fg_index():
 def get_watson():
     watson_ = ""
     response_w = requests.get(watson_)
-    response_json_w =  response_w.json
-    watson_index = parse_float(reponse_w["data"][0]["value"])
+    response_json_w =  response_w.json()
+    watson_index = parse_float(reponse_json_w["data"][0]["value"])
     return watson_index
+
+def get_vader():
+    vader = ""
+    response_v = requests.get(vader)
+    reponse_json_v = response_v.json()
+    vader_index = parse_float(response_json_v["data"][0]["value"])
+    return vader_index
+
+def get_blob():
+    blob = ""
+    response_b = requests.get(blob)
+    reponse_json_b = response_b.json()
+    blob_index = parse_float(response_json_b["data"][0]["value"])
+    return blob_index
 
 def get_recommendation():
     """
@@ -54,17 +68,17 @@ def get_recommendation():
 
 
 def get_watson_recommendation():
-    waston_index=get_watson_index()
+    watson_index=get_watson()
     watson_score = ""
     if watson_index >=0 and watson_index <= 40:
         watson_score = "Sentiment is negative", watson_score
     elif watson_index > 40 and watson_index < 60:
         watson_score = "Sentiment is neutral", watson_score
     else:
-        watson_score = "Sentiment is positive" watson_score
+        watson_score = "Sentiment is positive", watson_score
         
 def get_vader_recommendation():
-    vader_index=get_watson_index()
+    vader_index=get_vader()
     vader_score = ""
     if vader_index >=0 and vader_index <= 40:
         vader_score = "Sentiment is negative", vader_score
@@ -75,7 +89,7 @@ def get_vader_recommendation():
 
 
 def get_blob_recommendation():
-    blob_index=get_watson_index()
+    blob_index=get_blob()
     blob_score = ""
     if blob_index >=0 and blob_index <= 40:
         blob_score = "Sentiment is negative", blob_score
