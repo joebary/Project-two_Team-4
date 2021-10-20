@@ -11,11 +11,10 @@ Contents
  * [Installation](#installation)
  * [Instructions](#Instructions)
  * [Example](#Example)
- * [What can I back up?](#what-can-i-back-up)
- * [Configuration](#configuration)
- * [Output Structure](#output-structure)
- * [Reinstalling Dotfiles](#reinstalling-dotfiles)
- * [Want to contribute?](#want-to-contribute)
+ * [Sources](#sources)
+ * [Installation Documentation](#installation-documentation)
+ * [Contributors](#contributors)
+ * [License](#license)
 
 ### Uses
 
@@ -73,13 +72,15 @@ Download the repository to your local machine
 
 
 
-### Reinstalling Dotfiles
+### Sources
 
-To reinstall your dotfiles, clone your dotfiles repo and make sure your shallow-backup config path can be found at either `~/.config/shallow-backup.conf` or `$XDG_CONFIG_HOME/.shallow_backup.conf`. Set the `backup-path` key in the config to the path of your cloned dotfiles. Then run `$ shallow-backup -reinstall-dots`.
 
-When reinstalling your dotfiles, the top level `.git/`, `.gitignore`, `img/` and `README.md` files and directories are ignored.
 
-### Want to Contribute?
+### Installation Documentation
 ---
 
-Check out `CONTRIBUTING.md` and the `docs` directory.
+
+### Contributors
+
+
+### License
