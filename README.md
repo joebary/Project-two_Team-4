@@ -11,6 +11,7 @@ Contents
  * [Installation](#installation)
  * [Instructions](#Instructions)
  * [Example](#Example)
+ * [Challenges Faced](#challenges-faced)
  * [Sources](#sources)
  * [Installation Documentation](#installation-documentation)
  * [Contributors](#contributors)
@@ -72,7 +73,8 @@ Download the repository to your local machine
 
 ![n grams](https://github.com/joebary/Project-two_Team-4/blob/e179c0d7974d8110efcdd5d9a6f0c514481cd9f7/Images/n%20grams.png)
 
-
+### Challenges Faced
+---
 
 
 
