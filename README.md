@@ -31,7 +31,7 @@ This script has many uses here are some examples:
 ---
 Download the repository to your local machine
 
-*Please be advised that you will need a Twitter API key, information on how to obtain this can be found here https://developer.twitter.com/en/docs/twitter-api 
+*Please be advised that you will need a Twitter API key, information on how to obtain this can be found here https://developer.twitter.com/en/docs/twitter-api *
 
 **Please see the attached for installs and libraries used. Pip install is used to add these libraries to your environment**
 
@@ -40,7 +40,7 @@ Download the repository to your local machine
 
 ### Instructions
 ---
-** After installation and integration of the Twitter API key, please see the following screenshot of cell 5 to get to the Command Line Interface **
+**After installation and integration of the Twitter API key, please see the following screenshot of cell 5 to get to the Command Line Interface**
 
 ![cli](https://github.com/joebary/Project-two_Team-4/blob/e179c0d7974d8110efcdd5d9a6f0c514481cd9f7/Images/cli%20cell.png)
 
@@ -52,19 +52,23 @@ Download the repository to your local machine
 
 ![pie chart](https://github.com/joebary/Project-two_Team-4/blob/e179c0d7974d8110efcdd5d9a6f0c514481cd9f7/Images/pie%20chart.png)
 
-* Circle Chart after the data has been cleaned up * 
+
+**Circle Chart after the data has been cleaned up** 
 
 ![circle chart](https://github.com/joebary/Project-two_Team-4/blob/e179c0d7974d8110efcdd5d9a6f0c514481cd9f7/Images/circl%20chart.png)
 
-* Word count values *
+
+**Word count values**
 
 ![word counts](https://github.com/joebary/Project-two_Team-4/blob/e179c0d7974d8110efcdd5d9a6f0c514481cd9f7/Images/word%20counts.png)
 
-* Word Cloud *
+
+**Word Cloud**
 
 ![word cloud](https://github.com/joebary/Project-two_Team-4/blob/e179c0d7974d8110efcdd5d9a6f0c514481cd9f7/Images/word%20cloud.png)
 
-** Bi and Tri grams **
+
+**Bi and Tri grams**
 
 ![n grams](https://github.com/joebary/Project-two_Team-4/blob/e179c0d7974d8110efcdd5d9a6f0c514481cd9f7/Images/n%20grams.png)
 
