@@ -35,14 +35,14 @@ Download the repository to your local machine
 
 **Please see the attached for installs and libraries used. Pip install is used to add these libraries to your environment**
 
-[![Installs][]
+[![Installs][https://github.com/joebary/Project-two_Team-4/blob/e179c0d7974d8110efcdd5d9a6f0c514481cd9f7/Images/installs.png]
 
 
 ### Instructions
 ---
 ** After installation and integration of the Twitter API key, please see the following screenshot of cell 5 to get to the Command Line Interface **
 
-[![cli][]
+[![cli][https://github.com/joebary/Project-two_Team-4/blob/e179c0d7974d8110efcdd5d9a6f0c514481cd9f7/Images/cli%20cell.png]
 
 
 ### Example
@@ -50,23 +50,23 @@ Download the repository to your local machine
 
 **The following is run with the keyword search of etherum and 150 tweets**
 
-[![pie chart][]
+[![pie chart][https://github.com/joebary/Project-two_Team-4/blob/e179c0d7974d8110efcdd5d9a6f0c514481cd9f7/Images/pie%20chart.png]
 
 * Circle Chart after the data has been cleaned up * 
 
-[![circle chart][]
+[![circle chart][https://github.com/joebary/Project-two_Team-4/blob/e179c0d7974d8110efcdd5d9a6f0c514481cd9f7/Images/circl%20chart.png]
 
 * Word count values *
 
-[![word counts][]
+[![word counts][https://github.com/joebary/Project-two_Team-4/blob/e179c0d7974d8110efcdd5d9a6f0c514481cd9f7/Images/word%20counts.png]
 
 * Word Cloud *
 
-[![word cloud][]
+[![word cloud][https://github.com/joebary/Project-two_Team-4/blob/e179c0d7974d8110efcdd5d9a6f0c514481cd9f7/Images/word%20cloud.png]
 
 ** Bi and Tri grams **
 
-[![n grams][]
+[![n grams][https://github.com/joebary/Project-two_Team-4/blob/e179c0d7974d8110efcdd5d9a6f0c514481cd9f7/Images/n%20grams.png]
 
 
 
