@@ -2,7 +2,7 @@
 
 
 
-Reality check is a Jupyter Notebook based CLI script that allows the user to search Twitter for keywords or hashtags and return an analysis of the sentiment (positive, negative, neutral) using machine learning. The script also has built in graphics features to create pie charts, circle charts, and word clouds for easier viewing. The script also allows for the user to see the most used words in these tweets. Finally the script creates n - grams (bi-grams and tri-grams) using a statistical model to predict what other words might be used in conjuction with the searched term.
+Reality check is a Jupyter Notebook based CLI script that allows the user to search Twitter for keywords or hashtags and return an analysis of the sentiment (positive, negative, neutral) using machine learning. There are built in functions to clean up the data pulled from Twitter. The script also has built in graphics features to create pie charts, circle charts, and word clouds for easier viewing. The script also allows for the user to see the most used words in these tweets. Finally the script creates n - grams (bi-grams and tri-grams) using a statistical model to predict what other words might be used in conjuction with the searched term.
 
 Contents
 ========
@@ -31,7 +31,7 @@ This script has many uses here are some examples:
 ---
 Download the repository to your local machine
 
-*Please be advised that you will need a Twitter API key, information on how to obtain this can be found here https://developer.twitter.com/en/docs/twitter-api *
+*Please be advised that you will need a Twitter API key, information on how to obtain this can be found here (https://developer.twitter.com/en/docs/twitter-api)*
 
 **Please see the attached for installs and libraries used. Pip install is used to add these libraries to your environment**
 
