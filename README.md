@@ -48,7 +48,7 @@ Download the repository to your local machine
 ### Example
 ---
 
-**The following is run with the keyword search of etherum and 150 tweets**
+**The following is run with the keyword search of ethereum and 150 tweets**
 
 ![pie chart](https://github.com/joebary/Project-two_Team-4/blob/e179c0d7974d8110efcdd5d9a6f0c514481cd9f7/Images/pie%20chart.png)
 
