@@ -123,6 +123,8 @@ langdetect -https://pypi.org/project/langdetect/
 
 sklearn -https://scikit-learn.org/stable/index.html
 
+```
+
 ## Contributors
 ---
 Henry Wilcox - haw299@nyu.edu
