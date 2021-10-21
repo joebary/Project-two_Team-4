@@ -134,7 +134,7 @@ Youssef Said - joebary2008@gmail.com
 Kian Momeni - KMomeni97@gmail.com
 
 
-**With Special Thanks to our TA**
+*With Special Thanks to our TA*
 
 Mayur Amrutiya -mayuramrutiya325@gmail.com
 
