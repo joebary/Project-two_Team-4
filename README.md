@@ -96,18 +96,31 @@ We were able to get data from the Twitter API, but they do ask a lot of question
 ## Installation Documentation
 ---
 textblob -https://textblob.readthedocs.io/en/dev/
+
 tweepy -https://www.tweepy.org
+
 matplotlib -https://matplotlib.org
+
 pandas -https://pandas.pydata.org
+
 numpy -https://numpy.org
+
 nltk -https://www.nltk.org
+
 pycountry -https://pypi.org/project/pycountry/
+
 dotenv -https://pypi.org/project/python-dotenv/
+
 requests -https://pypi.org/project/requests/
+
 json  -https://www.json.org/json-en.html
+
 wordcloud -https://pypi.org/project/wordcloud/#:~:text=The%20wordcloud%20library%20is%20MIT%20licenced%2C%20but%20contains,the%20font_path%20variable%20when%20creating%20a%20WordCloud%20object.
+
 PIL -http://2017.compciv.org/guide/topics/python-nonstandard-libraries/pillow.html
+
 langdetect -https://pypi.org/project/langdetect/
+
 sklearn -https://scikit-learn.org/stable/index.html
 
 ## Contributors
