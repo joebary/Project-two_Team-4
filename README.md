@@ -17,7 +17,7 @@ Contents
  * [Contributors](#contributors)
  * [License](#license)
 
-### Uses
+## Uses
 
 This script has many uses here are some examples:
 
@@ -28,7 +28,7 @@ This script has many uses here are some examples:
   + Topics can be searched to find out how Twitter is reacting 
 'Reality-Check' can be used for an abundance of purposes
 
-### Installation
+## Installation
 ---
 Download the repository to your local machine
 
@@ -46,7 +46,7 @@ Download the repository to your local machine
 ![cli](https://github.com/joebary/Project-two_Team-4/blob/e179c0d7974d8110efcdd5d9a6f0c514481cd9f7/Images/cli%20cell.png)
 
 
-### Example
+## Example
 ---
 
 **The following is run with the keyword search of ethereum and 150 tweets**
@@ -73,21 +73,54 @@ Download the repository to your local machine
 
 ![n grams](https://github.com/joebary/Project-two_Team-4/blob/e179c0d7974d8110efcdd5d9a6f0c514481cd9f7/Images/n%20grams.png)
 
-### Challenges Faced
+## Challenges Faced
+---
+There were two main challenges faced in this project .
+
+1. Amazon Lambda and Lex
+2. Social Media Data
+
+The original idea for this project was to create an Amazon Lex bot that the user would interact with. We were able to get the bot set up, but the back end Lambda function proved difficult to work with, and the bot did not work. Ultimately, we were able to get more functionality and consistancy out of the CLI.
+
+
+We were able to get data from the Twitter API, but they do ask a lot of question and it takes an amount of time to get access. API data for Reddit and Facebook are also available, and the code could be modified to take in data from those two sources as well. More than likely a libary such as Tweepy would need to be imported to make sure the data will funciton properly within python.
+
+
+
+
+## Sources
 ---
 
 
 
-### Sources
+## Installation Documentation
 ---
+textblob -https://textblob.readthedocs.io/en/dev/
+tweepy -https://www.tweepy.org
+matplotlib -https://matplotlib.org
+pandas -https://pandas.pydata.org
+numpy -https://numpy.org
+nltk -https://www.nltk.org
+pycountry -https://pypi.org/project/pycountry/
+dotenv -https://pypi.org/project/python-dotenv/
+requests -https://pypi.org/project/requests/
+json  -https://www.json.org/json-en.html
+wordcloud -https://pypi.org/project/wordcloud/#:~:text=The%20wordcloud%20library%20is%20MIT%20licenced%2C%20but%20contains,the%20font_path%20variable%20when%20creating%20a%20WordCloud%20object.
+PIL -http://2017.compciv.org/guide/topics/python-nonstandard-libraries/pillow.html
+langdetect -https://pypi.org/project/langdetect/
+sklearn -https://scikit-learn.org/stable/index.html
 
-
-
-### Installation Documentation
+## Contributors
 ---
+Henry Wilcox - haw299@nyu.edu
+Sean Patel - seanpatel076@gmail.com
+Youssef Said - joebary2008@gmail.com
+Kian Momeni - KMomeni97@gmail.com
+
+**With Special Thanks to our TA**
+Mayur Amrutiya -mayuramrutiya325@gmail.com
 
 
-### Contributors
-
-
-### License
+## License
+---
+Public 
